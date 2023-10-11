@@ -5,11 +5,13 @@
 using namespace std;
 int main()
 {
-    double bmi;
-    double height=167.5;
-    double weight=60;
+    //auto bmi;   // 型推論には初期値が必要
     
-    bmi = weight / ((height / 100) * (height / 100)); // BMIを求める数式
+    auto height=167.5f;
+    auto weight=60.0;
+    cout << sizeof(height)<<endl;
+
+    auto bmi = weight / ((height / 100) * (height / 100)); // BMIを求める数式
 
     cout << "身長=" << height << ", 体重 = " 
         << weight << " , \nBMI = "<<bmi;

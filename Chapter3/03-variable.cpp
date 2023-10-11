@@ -2,8 +2,12 @@
 using namespace std;
 
 int main() {
+
+	int a = 12345;
+	const int c = 12345;
+
 	int x[4] = { 10,2,300,-4 };
-	for (int i = 0; i <= 10000; i++) {
+	for (int i = 0; i < 100; i++) {
 		cout << "x[" << i << "]=" << x[i] << endl;
 	}
 	
