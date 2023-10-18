@@ -9,7 +9,6 @@ int main()
 	int heads; //頭
 	int legs; //脚
 	
-	cout << "頭の数は：";		//Console.Write("頭の数は：");
 	/* 入力エラーの処理
 	while (true) {
 		cout << "頭の数は：";		//Console.Write("頭の数は：");
@@ -25,10 +24,13 @@ int main()
 		break;
 	}
 	*/
+
+	cout << "頭の数は：";		//Console.Write("頭の数は：");
 	cin >> heads;				//heads = int.Parse(Console.ReadLine());
 	cout << "脚の数は：";		//Console.Write("脚の数は：");
 	cin >> legs;				//legs = int.Parse(Console.ReadLine());
 
+	cout << "入力された数は\nheads=" << heads << "\nlegs=" << legs << endl;
 	//ここで鶴と亀の数をcraneとturtleに代入
 	turtle = (legs / 2) - heads;
 	crane = heads - turtle;
