@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter3", "Chapter3\Chapte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpSample", "CSharpSample\CSharpSample.csproj", "{D1BD2E9A-891E-4C19-BC92-DB94027C4282}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp_ex1", "..\cpp_ex1\cpp_ex1.vcxproj", "{089BF4DF-CC0E-4234-A22E-F23FC7CB85AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,18 @@ Global
 		{D1BD2E9A-891E-4C19-BC92-DB94027C4282}.Release|x64.Build.0 = Release|Any CPU
 		{D1BD2E9A-891E-4C19-BC92-DB94027C4282}.Release|x86.ActiveCfg = Release|Any CPU
 		{D1BD2E9A-891E-4C19-BC92-DB94027C4282}.Release|x86.Build.0 = Release|Any CPU
+		{089BF4DF-CC0E-4234-A22E-F23FC7CB85AA}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{089BF4DF-CC0E-4234-A22E-F23FC7CB85AA}.Debug|Any CPU.Build.0 = Debug|x64
+		{089BF4DF-CC0E-4234-A22E-F23FC7CB85AA}.Debug|x64.ActiveCfg = Debug|x64
+		{089BF4DF-CC0E-4234-A22E-F23FC7CB85AA}.Debug|x64.Build.0 = Debug|x64
+		{089BF4DF-CC0E-4234-A22E-F23FC7CB85AA}.Debug|x86.ActiveCfg = Debug|Win32
+		{089BF4DF-CC0E-4234-A22E-F23FC7CB85AA}.Debug|x86.Build.0 = Debug|Win32
+		{089BF4DF-CC0E-4234-A22E-F23FC7CB85AA}.Release|Any CPU.ActiveCfg = Release|x64
+		{089BF4DF-CC0E-4234-A22E-F23FC7CB85AA}.Release|Any CPU.Build.0 = Release|x64
+		{089BF4DF-CC0E-4234-A22E-F23FC7CB85AA}.Release|x64.ActiveCfg = Release|x64
+		{089BF4DF-CC0E-4234-A22E-F23FC7CB85AA}.Release|x64.Build.0 = Release|x64
+		{089BF4DF-CC0E-4234-A22E-F23FC7CB85AA}.Release|x86.ActiveCfg = Release|Win32
+		{089BF4DF-CC0E-4234-A22E-F23FC7CB85AA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
