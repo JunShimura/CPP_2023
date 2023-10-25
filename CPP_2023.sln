@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpSample", "CSharpSampl
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp_ex1", "cpp_ex1\cpp_ex1.vcxproj", "{089BF4DF-CC0E-4234-A22E-F23FC7CB85AA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp_ex2", "cpp_ex2\cpp_ex2.vcxproj", "{78086781-B787-4958-A654-6586B6D8FCC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,18 @@ Global
 		{089BF4DF-CC0E-4234-A22E-F23FC7CB85AA}.Release|x64.Build.0 = Release|x64
 		{089BF4DF-CC0E-4234-A22E-F23FC7CB85AA}.Release|x86.ActiveCfg = Release|Win32
 		{089BF4DF-CC0E-4234-A22E-F23FC7CB85AA}.Release|x86.Build.0 = Release|Win32
+		{78086781-B787-4958-A654-6586B6D8FCC2}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{78086781-B787-4958-A654-6586B6D8FCC2}.Debug|Any CPU.Build.0 = Debug|x64
+		{78086781-B787-4958-A654-6586B6D8FCC2}.Debug|x64.ActiveCfg = Debug|x64
+		{78086781-B787-4958-A654-6586B6D8FCC2}.Debug|x64.Build.0 = Debug|x64
+		{78086781-B787-4958-A654-6586B6D8FCC2}.Debug|x86.ActiveCfg = Debug|Win32
+		{78086781-B787-4958-A654-6586B6D8FCC2}.Debug|x86.Build.0 = Debug|Win32
+		{78086781-B787-4958-A654-6586B6D8FCC2}.Release|Any CPU.ActiveCfg = Release|x64
+		{78086781-B787-4958-A654-6586B6D8FCC2}.Release|Any CPU.Build.0 = Release|x64
+		{78086781-B787-4958-A654-6586B6D8FCC2}.Release|x64.ActiveCfg = Release|x64
+		{78086781-B787-4958-A654-6586B6D8FCC2}.Release|x64.Build.0 = Release|x64
+		{78086781-B787-4958-A654-6586B6D8FCC2}.Release|x86.ActiveCfg = Release|Win32
+		{78086781-B787-4958-A654-6586B6D8FCC2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -26,9 +26,9 @@ int main()
 	*/
 
 	cout << "頭の数は：";		//Console.Write("頭の数は：");
-	cin >> heads;				//heads = int.Parse(Console.ReadLine());
+	cin >> heads;			//heads = int.Parse(Console.ReadLine());
 	cout << "脚の数は：";		//Console.Write("脚の数は：");
-	cin >> legs;				//legs = int.Parse(Console.ReadLine());
+	cin >> legs;			//legs = int.Parse(Console.ReadLine());
 
 	cout << "入力された数は\nheads=" << heads << "\nlegs=" << legs << endl;
 	//ここで鶴と亀の数をcraneとturtleに代入
