@@ -40,18 +40,18 @@ int main() {
 			{50,'C'},
 			{0,'D'}
 	};
-	const int GRADE_COUNT = 101;
-	char gradeTable[GRADE_COUNT];
+	const int GRADE_COUNT = 10;
+	int gradeTable[GRADE_COUNT];
 	for (i = 0; i < GRADE_COUNT; i++) {
 		for (j = 0; j < _countof(pointborder); j++) {
-			if (i >= pointborder[j].point) {
-				gradeTable[i] = pointborder[j].grade;
+			if (point[i] >= pointborder[j].point) {
+				gradeTable[i] = j;
 				break;
 			}
 		}
 	}
 	for (i = 0; i < _countof(point); i++) {
-		cout << point[i] << "=" << gradeTable[point[i]] << endl;
+		cout << point[i] << "=" << pointborder[gradeTable[i]].grade << endl;
 	}
 	/*
 	for (i = 0; i < _countof(point); i++) {
