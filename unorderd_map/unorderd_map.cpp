@@ -1,10 +1,16 @@
 ﻿#include <iostream>
 #include <unordered_map>
+#include<float.h>
+
 using namespace std;
 
 double GetBMI(float height, float weight);
 int getObesity(double bmi);
 void getObesityTest();
+struct ObesityBMI {
+	double bmi;
+	int obesity;
+};
 int main()
 {
 	auto height = 167.5;
@@ -30,7 +36,7 @@ int main()
 		{4,"肥満(4度）"}
 	};
 	cout << obesityClassMap[obesity] << "です。" << endl;
-	//getObesityTest();
+	getObesityTest();
 	return 0;
 }
 /// <summary>
@@ -48,6 +54,22 @@ double GetBMI(float height, float weight) {
 /// <param name="bmi">BMI</param>
 /// <returns>肥満度</returns>
 int getObesity(double bmi) {
+	static ObesityBMI obesityMap[]{
+		{18.5 ,- 1},
+		{25,0},
+		{30,1},
+		{35,2},
+		{40,3},
+		{DBL_MAX,4}
+	};
+	int obesity;
+	for (int i = 0; i < _countof(obesityMap); i++) {
+		if (bmi < obesityMap[i].bmi) {
+			obesity = obesityMap[i].obesity;
+			break;
+		}
+	}
+	/*
 	int obesity = 4;
 	if (bmi < 18.5) {
 		obesity = -1;	//	-1	bmi<18.5		
@@ -64,13 +86,26 @@ int getObesity(double bmi) {
 	else if (bmi < 40) {
 		obesity = 3;	//	3	35以上40未満
 	}
+	*/
+	
 	return obesity;
 }
 void getObesityTest() {
-	double bmi[] = { 10,	18.4,	18.5,	24,	25,	29,	30,	34,	35,	40,	45 };
-	int		ob[] = { -1,	-1,		0,		0,	1,	1,	2,	2,	3,	4,	4 };
-	for (int i = 0; i < _countof(bmi); i++) {
-		if (getObesity(bmi[i]) == ob[i]) {
+	static ObesityBMI obesityTestMap[]{
+	{10 ,-1},
+	{18.4,-1},
+	{18.5,0},
+	{24,0},
+	{25,1},
+	{29,1},
+	{30,2},
+	{34,2},
+	{35,3},
+	{40,4},
+	{45,4},
+	};
+	for (int i = 0; i < _countof(obesityTestMap); i++) {
+		if (getObesity(obesityTestMap[i].bmi) == obesityTestMap[i].obesity) {
 			cout << "passed Test#" << i << endl;
 		}
 		else {

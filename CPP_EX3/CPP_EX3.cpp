@@ -20,7 +20,7 @@ int main()
 		"肥満(4度）"	//	4	40以上		
 	};
 	cout << obesityClass[obesity+1]<< "です。" << endl;
-	//getObesityTest();
+	getObesityTest();
 	return 0;
 }
 /// <summary>
