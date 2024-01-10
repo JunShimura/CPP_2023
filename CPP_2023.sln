@@ -45,6 +45,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09-chrono", "09-chrono\09-c
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09-minmax", "09-minmax\09-minmax.vcxproj", "{6B3B07BC-9965-4D73-BDB2-6337C5C2105C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class", "..\Class\Class.vcxproj", "{EC7A9F37-0DCE-41C2-B754-0AD79D38561D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -307,6 +309,18 @@ Global
 		{6B3B07BC-9965-4D73-BDB2-6337C5C2105C}.Release|x64.Build.0 = Release|x64
 		{6B3B07BC-9965-4D73-BDB2-6337C5C2105C}.Release|x86.ActiveCfg = Release|Win32
 		{6B3B07BC-9965-4D73-BDB2-6337C5C2105C}.Release|x86.Build.0 = Release|Win32
+		{EC7A9F37-0DCE-41C2-B754-0AD79D38561D}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{EC7A9F37-0DCE-41C2-B754-0AD79D38561D}.Debug|Any CPU.Build.0 = Debug|x64
+		{EC7A9F37-0DCE-41C2-B754-0AD79D38561D}.Debug|x64.ActiveCfg = Debug|x64
+		{EC7A9F37-0DCE-41C2-B754-0AD79D38561D}.Debug|x64.Build.0 = Debug|x64
+		{EC7A9F37-0DCE-41C2-B754-0AD79D38561D}.Debug|x86.ActiveCfg = Debug|Win32
+		{EC7A9F37-0DCE-41C2-B754-0AD79D38561D}.Debug|x86.Build.0 = Debug|Win32
+		{EC7A9F37-0DCE-41C2-B754-0AD79D38561D}.Release|Any CPU.ActiveCfg = Release|x64
+		{EC7A9F37-0DCE-41C2-B754-0AD79D38561D}.Release|Any CPU.Build.0 = Release|x64
+		{EC7A9F37-0DCE-41C2-B754-0AD79D38561D}.Release|x64.ActiveCfg = Release|x64
+		{EC7A9F37-0DCE-41C2-B754-0AD79D38561D}.Release|x64.Build.0 = Release|x64
+		{EC7A9F37-0DCE-41C2-B754-0AD79D38561D}.Release|x86.ActiveCfg = Release|Win32
+		{EC7A9F37-0DCE-41C2-B754-0AD79D38561D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
