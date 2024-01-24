@@ -8,42 +8,42 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Box">
-    <Position X="3.25" Y="3.5" Width="1.5" />
+    <Position X="3.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAgAAAAQAQAAAAAAAAAIACAAAAAQAIAAAAAA=</HashCode>
       <FileName>CPP_Ex8.cpp</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Cylinder">
-    <Position X="7.5" Y="3.5" Width="1.5" />
+    <Position X="6.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAACgAAAAQAAAAAAAAAAAAACAAAAAQAAAAAAAA=</HashCode>
       <FileName>CPP_Ex8.cpp</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Cone">
-    <Position X="0.75" Y="3.5" Width="1.5" />
+    <Position X="1.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAACgAAAAQAAAAgAAAAAAAACAAAAAQAAAAAAAA=</HashCode>
       <FileName>CPP_Ex8.cpp</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Sphere">
-    <Position X="5.5" Y="3.5" Width="1.5" />
+    <Position X="5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAACgAAAAAAAAQAAAAAAAAACAAAAAQAAAAAAAA=</HashCode>
       <FileName>CPP_Ex8.cpp</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PackageSizeTable">
-    <Position X="10.25" Y="3.5" Width="1.5" />
+    <Position X="9.25" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAEABAAAAAAEAAAAAEAAAAAAAAAAAABAA=</HashCode>
       <FileName>CPP_Ex8.cpp</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Package">
-    <Position X="10.25" Y="0.5" Width="1.5" />
+    <Position X="9.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAEAAAAAAQAAAAAAgEAAAAAAAAAAAAAQA=</HashCode>
       <FileName>CPP_Ex8.cpp</FileName>

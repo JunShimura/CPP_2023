@@ -170,7 +170,7 @@ int main()
 
 	Box nintendoSwitchBox{ 20,35,10 };
 	Box nintendoSwitchBox2022{ 21,26,10 };
-	Cylinder monsterEnergyCan{ 2.9,15.6 };
+	Cylinder monsterEnergyCan{ 5.8,15.6 };
 	Package packages[] = {
 		Package{"NintendoSwitch",&nintendoSwitchBox,&kuronekoTable},
 		Package{"NintendoSwitch",&nintendoSwitchBox,&yupackTable},
