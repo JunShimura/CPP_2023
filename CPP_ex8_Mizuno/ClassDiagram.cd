@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Solid" Collapsed="true">
+    <Position X="4.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CPP_ex8_Mizuno.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Box" Collapsed="true">
+    <Position X="3.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAASAQAAAAAAAAAIAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>CPP_ex8_Mizuno.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cylinder" Collapsed="true">
+    <Position X="8" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAASAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>CPP_ex8_Mizuno.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cone" Collapsed="true">
+    <Position X="1.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAASAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CPP_ex8_Mizuno.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sphere" Collapsed="true">
+    <Position X="5.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAACAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CPP_ex8_Mizuno.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Yu Gothic UI" Size="9" />
+</ClassDiagram>
