@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #define _USE_MATH_DEFINES
 #include <math.h>
+#include<string>
 #include<vector>
 
 using namespace std;
@@ -12,6 +13,7 @@ class Solid {
 public:
 	virtual double GetVolume() = 0;
 	virtual double GetSurface() = 0;
+	virtual double GetPackageLength() = 0;
 };
 
 /// <summary>
@@ -38,6 +40,9 @@ public:
 	double GetSurface() {
 		return (width * height + height * depth + depth * width) * 2;
 	}
+	double GetPackageLength() {
+		return width + height + depth;
+	}
 };
 
 class Cylinder :public Solid {
@@ -58,6 +63,9 @@ public:
 	}
 	double GetSurface() {
 		return	2 * M_PI * radius * (radius + height);	//2 * M_PI * radius * radius + 2 * M_PI * radius * height;
+	}
+	double GetPackageLength() {
+		return radius * 4 + height;
 	}
 };
 class Cone :public Solid {
@@ -81,6 +89,9 @@ public:
 		double r2 = sqrt(this->radius * this->radius + this->height * this->height);
 		return  M_PI * this->radius * this->radius + r2 * r2 * M_PI * this->radius / r2;
 	}
+	double GetPackageLength() {
+		return radius * 4 + height;
+	}
 };
 
 class Sphere :public Solid {
@@ -100,39 +111,76 @@ public:
 	{
 		return  4 * M_PI * this->radius * this->radius;
 	}
+	double GetPackageLength() {
+		return radius * 6;
+	}
 };
 
-class PackageSize
+class PackageSizeTable
 {
 private:
+	string name;
 	vector<int> table;
 public:
-	PackageSize(int* table, int tableSize) {
+	PackageSizeTable(const string name, const int* table, const int tableSize) {
+		this->name = name;
 		for (int i = 0; i < tableSize; i++) {
 			this->table.push_back(*(table + i));
 		}
 	}
-	int GetPackageSize(Solid) {
+	string GetName() {
+		return name;
+	}
+	int GetPackageSize(Solid* solid) {
+		int packSize = -1;
+		for (int i = 0; i < this->table.size(); i++) {
+			if (solid->GetPackageLength() <= table[i]) {
+				packSize = table[i];
+				break;
+			}
+		}
+		return packSize;
+	}
+};
 
+class Package {
+private:
+	Solid* solid;
+public:
+	PackageSizeTable* packSizeTable;
+	string name;
+	Package(const char* name, Solid* solid, PackageSizeTable* packSizeTable) {
+		this->name = name;
+		this->solid = solid;
+		this->packSizeTable = packSizeTable;
+	}
+	int GetPackageSize() {
+		return this->packSizeTable->GetPackageSize(solid);
 	}
 };
 
 int main()
 {
-	/*
-	Box box{ 3,5,2.5 };
-	Cylinder cylinder{ 2.25,4 };
-	Solid* solids[2] = {&box,&cylinder};
-	*/
-	Solid* solids[] = {
-		new Box(3,5,2.5),
-		new Cylinder(2.25,4),
-		new Cone(2.25,4),
-		new Sphere(2.25)
+	// クロネコ
+	int kuroneko[] = { 60,80,100,120,140,160,180,200 };
+	PackageSizeTable kuronekoTable = PackageSizeTable("クロネコ", kuroneko, _countof(kuroneko));
+	// ゆうパック
+	int yupack[] = { 60,80,100,120,140,160,170 };
+	PackageSizeTable yupackTable = PackageSizeTable("ゆうパック", yupack, _countof(yupack));
+
+	Box nintendoSwitchBox{ 20,35,10 };
+	Box nintendoSwitchBox2022{ 21,26,10 };
+	Cylinder monsterEnergyCan{ 5.8,15.6 };
+	Package packages[] = {
+		Package{"NintendoSwitch",&nintendoSwitchBox,&kuronekoTable},
+		Package{"NintendoSwitch",&nintendoSwitchBox,&yupackTable},
+		Package{"新しいNintendoSwitch",&nintendoSwitchBox2022,&kuronekoTable},
+		Package{"新しいNintendoSwitch",&nintendoSwitchBox2022,&yupackTable},
+		Package{"モンエナ缶ひとつ",&monsterEnergyCan,&yupackTable},
 	};
-	for (Solid* s : solids)
+
+	for (Package p : packages)
 	{
-		cout << "体積=" << s->GetVolume() << endl;
-		cout << "表面積=" << s->GetSurface() << endl;
+		cout << p.name << "の" << p.packSizeTable->GetName() << "での宅急便のサイズは" << p.GetPackageSize() << endl;
 	}
 }
